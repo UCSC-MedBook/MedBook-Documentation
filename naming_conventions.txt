@@ -1,0 +1,19 @@
+In order to resolve some of the naming confusion in MedBook. I’m proposing the following rules for field names:
+
+1. fields that store guide should end with _id
+	EXAMPLES
+		 patient_Id, sample_id, gene_id, study_id all would look like a meteor assigned id “AyBE34r7m89rmn6Q3"
+
+NOTE: We are trying to avoid using the mongo-style  ObjectId("5558a3b3d9dd43f9205514a4”) since there are issues with it during scale up that Abigail found the hard way.
+
+2. fields that store short human readable using end with _label suffix are suitable for row and column headings:
+
+	EXAMPLES
+		 gene_label: ERG, patient_label: DTB-003, sample_label: DTB-003Pro, study_label: prad_wcdt
+
+3. fields ending with _name are longer that labels and would be used for titles of pages where more space is available.
+	
+	EXAMPLES
+		gene_name: Androgen Receptor
+		study_name: West Coast Prostate Cancer Dream Team
+
