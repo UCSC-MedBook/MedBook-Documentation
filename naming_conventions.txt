@@ -2,7 +2,7 @@ In order to resolve some of the naming confusion in MedBook. I’m proposing the
 
 1. fields that store guide should end with _id
 	EXAMPLES
-		 patient_Id, sample_id, gene_id, study_id all would look like a meteor assigned id “AyBE34r7m89rmn6Q3"
+		 _id (all collections), patient_id, sample_id, gene_id, study_id all would look like a meteor assigned id “AyBE34r7m89rmn6Q3"
 
 NOTE: We are trying to avoid using the mongo-style  ObjectId("5558a3b3d9dd43f9205514a4”) since there are issues with it during scale up that Abigail found the hard way.
 
