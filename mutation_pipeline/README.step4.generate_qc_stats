@@ -2,3 +2,6 @@
 sh /data/MedBook/scripts/vcf_wrangle.sh <SNPEFF decorated VCF file> <sample name>
 
 output is a set of pdf files for plotting
+
+awk -F'\t' 'BEGIN{OFS="\t";print "sample","tumor alt", "tumor total", "tumor ratio","normal alt", "normal total","normal ratio"}' > summary_depth.txt
+for i in `cat hi_tumor.list` ; do awk -F'\t' '{ta=ta+$9; tt=tt+$7; nt=nt+$17; na=na+$19}END{OFS="\t";print $1,ta,tt,ta/tt,na,nt,na/nt}' ${i}_depth.tab >> summary_depth.txt ; done
