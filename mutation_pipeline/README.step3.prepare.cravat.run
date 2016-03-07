@@ -1,0 +1,11 @@
+ cd /data/home/chrisw/medbook_stuff/wcdt_mutation
+ for i in `ls *mutect*` ; do echo $i ; grep -v REJECT $i > /data/MedBook/scripts/wcdt_mutation/$i ; done
+ for i in `ls *muse*` ; do echo $i ; grep -v REJECT $i > /data/MedBook/scripts/wcdt_mutation/$i ; done
+ cd /data/MedBook/scripts/wcdt_mutation
+ for i in `ls *.mutect.vcf` ; do awk -v f=${i%%.mutect.vcf} -F'\t' 'NF!=11{print $0}NF==11 && $1=="#CHROM"{print $0}NF==11 && $1!="#CHROM"{OFS="\t";print f"_"NR,$1,$2,"+",$4,$5,f}' $i > ${i%%.mutect.vcf}.cravat ; done
+ cat DT*T.cravat > wcdt.cravat
+ for i in `ls *.muse.vcf` ; do awk -v f=${i%%.muse.vcf} -F'\t' 'NF!=11{print $0}NF==11 && $1=="#CHROM"{print $0}NF==11 && $7=="PASS" && $1!="#CHROM"{OFS="\t";print f"_"NR,$1,$2,"+",$4,$5,f}' $i > ${i%%.muse.vcf}.muse.pass.cravat ; done
+ for i in `ls *.muse.vcf` ; do awk -v f=${i%%.muse.vcf} -F'\t' 'NF!=11{print $0}NF==11 && $1=="#CHROM"{print $0}NF==11 && $7=="Tier1" && $1!="#CHROM"{OFS="\t";print f"_"NR,$1,$2,"+",$4,$5,f}' $i > ${i%%.muse.vcf}.muse.tier1.cravat ; done
+ cat DT*muse.cravat > wcdt.muse.cravat
+ upload wcdt.mutect.cravat to cravat.us
+ submit job selecting analysis options VEST, Chasm, genecards, SNVGet, prostate cancer and include text output

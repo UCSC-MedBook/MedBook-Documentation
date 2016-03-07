@@ -1,0 +1,3 @@
+after fastq files are uploaded from UCSF
+submit fastq files to toil variant calling pipeline
+Download VCF files to know location
