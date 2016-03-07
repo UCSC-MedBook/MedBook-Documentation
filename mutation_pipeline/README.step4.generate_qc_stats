@@ -1,0 +1,4 @@
+# make coverage plots for mutation qc
+sh /data/MedBook/scripts/vcf_wrangle.sh <SNPEFF decorated VCF file> <sample name>
+
+output is a set of pdf files for plotting
