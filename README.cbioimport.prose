@@ -7,8 +7,12 @@ The genomic matrices are stored with sample in the columns and genes in the rows
 The adapter scripts handle converting data from medbook format to Cbio  are located here:
 /data/MedBook/scripts/
 clin_export.sh
+<data fusion data downloader>
 
-if there are changes the details on the import procedcure are listed here:
+One important step for cbio is z-score normalizing the expression data. For this you need to have both GISTIC processed copy number data (integers between -2 and 2) and expression data.  The cbio import can do normalization for you using this script:
+/data/cbio-portal-medbook/normalize_batch.sh  [this may require editing depending on filenames]
+
+if there are changes the details on the import procedure are listed here:
 
 https://github.com/cBioPortal/cbioportal/wiki/File-Formats
 
@@ -28,24 +32,22 @@ export DATA="/data/cbio_staging/prad-wcdt-study"
 
 the FILES needed by the cbio importer should be named EXACTLY as follows:
 
+./data_clinical.txt
+./data_CNA.txt                   [GISTIC Discrete scores]
+./data_expression_median.txt     [zscore normalized]
+./data_mutations_extended.txt    [MAF format]
+
+./MAF_example.txt  [not used for reference]
+
 ./case_lists/cases_all.txt
-./case_lists/cases_CNA.txt
-./case_lists/cases_mRNA.txt
+./case_lists/cases_CNA.txt 
+./case_lists/cases_mRNA.txt 
 ./case_lists/cases_sequenced.txt  [mutations]
 ./meta_clinical.txt
 ./meta_CNA.txt
 ./meta_expression_median.txt
-./meta_mutations_extended.txt
+./meta_mutations_extended.txt  
 ./meta_study.txt
-
-./data_clinical.txt
-./data_CNA.txt
-./data_expression_median.txt
-./data_mutations_extended.txt
-
-./MAF_example.txt  [not used for reference]
-
-
 
 Scripts to export TCGA CBIO data into medbook are here (/data/MedBook/scripts)
 export_cbio_expression.sql
