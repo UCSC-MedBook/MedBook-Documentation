@@ -4,7 +4,11 @@ The process of loading data into cbio involves four types of data: 1) genomic ma
 
 The genomic matrices are stored with sample in the columns and genes in the rows. Gene names are stored as hugo symbols in column 1 and entrez IDs in column 2
 
-The adapter scripts handle converting data from medbook format to Cbio but if there are changes the details on the import procedcure are listed here:
+The adapter scripts handle converting data from medbook format to Cbio  are located here:
+/data/MedBook/scripts/
+clin_export.sh
+
+if there are changes the details on the import procedcure are listed here:
 
 https://github.com/cBioPortal/cbioportal/wiki/File-Formats
 
@@ -40,3 +44,17 @@ the FILES needed by the cbio importer should be named EXACTLY as follows:
 ./data_mutations_extended.txt
 
 ./MAF_example.txt  [not used for reference]
+
+
+
+Scripts to export TCGA CBIO data into medbook are here (/data/MedBook/scripts)
+export_cbio_expression.sql
+export_cbio_expression_prad.sql
+export_cbio_expression_prad.sh
+export_cbio_expression.sh
+import_tcga.py
+exp_insert_tcga.js
+import_tcga.sh
+README
+exp_insert_tcga_wcdt.js
+exp_raw_count.js
