@@ -1,0 +1,42 @@
+#loading data WCDT data into cbio
+
+The process of loading data into cbio involves four types of data: 1) genomic matrices for expression, copy number, mutation, paradigm IPLs, methylation, Fusion, RPPA; 2) clinical data (which could include signature scores) and 3) metadata describing with data types have data for which samples. This final data is stored in caselist files; 4) timeline data
+
+The genomic matrices are stored with sample in the columns and genes in the rows. Gene names are stored as hugo symbols in column 1 and entrez IDs in column 2
+
+The adapter scripts handle converting data from medbook format to Cbio but if there are changes the details on the import procedcure are listed here:
+
+https://github.com/cBioPortal/cbioportal/wiki/File-Formats
+
+details on running the import are here:
+
+the old importer is this script
+
+/data/cbio-portal-medbook/import_wcdt_full.sh
+
+the new verion of cbio uses python wrappers and is documented here:
+
+https://github.com/cBioPortal/cbioportal/wiki/Importer%20Tool
+
+
+the location of the data that will be imported should be stored here:
+export DATA="/data/cbio_staging/prad-wcdt-study"
+
+the FILES needed by the cbio importer should be named EXACTLY as follows:
+
+./case_lists/cases_all.txt
+./case_lists/cases_CNA.txt
+./case_lists/cases_mRNA.txt
+./case_lists/cases_sequenced.txt  [mutations]
+./meta_clinical.txt
+./meta_CNA.txt
+./meta_expression_median.txt
+./meta_mutations_extended.txt
+./meta_study.txt
+
+./data_clinical.txt
+./data_CNA.txt
+./data_expression_median.txt
+./data_mutations_extended.txt
+
+./MAF_example.txt  [not used for reference]
