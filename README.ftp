@@ -1,0 +1,31 @@
+Hi Folks,
+
+   So, medbook-ftp.sdsc.edu is ready to go.  I have the FTP server set up such that there are "virtual" FTP users.  i.e. the FTP users are NOT UNIX users on the system.  If you want to give someone access to the FTP server, you must follow these steps.
+
+   1: Decide on the user's username.  I already made an account called 'bsmith' for Bryan Smith.
+
+   2: Create the user's FTP homedir.  The FTP data is located in /data/ftp.  So for bsmith, do:
+
+   % mkdir /data/ftp/bsmith
+   % chmod 770 /data/ftp/bsmith
+
+   3: Create the user's password hash.  To create their password hash, choose a password for them and run it through the following openssl command on the command line on medbook-ftp.sdsc.edu.  Substitute 'MyNewPassword' with whatever password you choose:
+
+   % openssl passwd -1 MyNewPassword
+   $1$JYQN/uQG$mHq8bfHUH9WN8.vJiXvOC.
+
+   Use this hash as the password hash in the next step.
+
+   4: Create the user's passwd entry.  There is a file called /data/ftp.passwd which you both have rights to edit.  Add a new line by copying the lowest line in the file, and substitute out the appropriate fields, namely the password hash, the username, the user's full name, and their FTP homedir.  Keep the uid and gid numbers the same for every user, and every user should have /sbin/nologin as their shell.
+
+   That's it, just use those four steps to create an FTP account.  I've already created bsmith's account there.  You should use the password hash step to make him a new password, just edit the /data/ftp.passwd file and put a new password hash in there, then give him the password.
+
+   You can copy data to and from their home directory.  You can delete files in there if you want to delete files.  Etc.
+
+   To log into medbook-ftp over ssh, you have to first log into another host in SDSC like kolossus.sdsc.edu or hgwdev.sdsc.edu, then from there ssh into medbook-ftp.  It uses your same automounted homedirs and credentials as kolossus or hgwdev.  Then you can see all the FTP files in the /data filesystem on medbook-ftp.  /data has 11TB available in it.
+
+   Let me know if you have any questions.  I've already copied all the files for bsmith that you requested into /data/ftp/bsmith/.  Just reset his password using the above method, tell him the password, and he can log in and download the files.  I'll let you guys handle the rest.
+
+   Let me know if you have any questions.
+
+   -erich
