@@ -34,7 +34,7 @@
 ## Mongo
 
 ##### Interactive shell 
-`docker run -v  --net=medbook_default -it mongo:2.6.11 mongo --host mongo`
+`docker run --net=medbook_default -it mongo:2.6.11 mongo --host mongo`
 
 ##### Restore exported collections (requires export files and load_from_exports.sh present in /tmp/su2c-dev)
 `docker run -v /tmp/su2c-dev/:/su2c-dev  --net=medbook_default -it mongo:2.6.11 /su2c-dev/load_from_exports.sh`
