@@ -22,6 +22,12 @@
 ##### Bash session for running container
 `docker exec -it [CONTAINER_NAME] /bin/bash`
 
+##### Show docker images
+`docker images`
+
+##### Show image layers (w/ sizes)
+`docker history [IMAGE_ID]`
+
 ## Mongo
 
 ##### Interactive shell 
