@@ -16,6 +16,9 @@
 ##### Stop container
 `docker stop [CONTAINER_NAME]`
 
+##### Stop all running containers
+`docker ps -q | xargs docker stop`
+
 ##### Remove container (must be stopped)
 `docker rm [CONTAINER_NAME]`
 
