@@ -34,6 +34,9 @@
 ##### Follow logs of single container
 `docker logs --follow [CONTAINER_NAME]`
 
+##### Remove orphaned docker volumes (frees up significant space)
+`docker volume ls -qf dangling=true | xargs -r docker volume rm`
+
 ## Mongo
 
 ##### Interactive shell 
