@@ -31,6 +31,9 @@
 ##### Show image layers (w/ sizes)
 `docker history [IMAGE_ID]`
 
+##### Follow logs of single container
+`docker logs --follow [CONTAINER_NAME]`
+
 ## Mongo
 
 ##### Interactive shell 
