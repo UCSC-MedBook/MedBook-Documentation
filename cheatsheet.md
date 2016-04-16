@@ -47,6 +47,6 @@
 
 ## Misc
 
-##### SSH Tunnel (localhost:7000 forwarded to remoteHost:8000)
+##### SSH Tunnel (localhost:7000 forwarded to remoteHost:27017)
 
-`ssh -L 7000:remoteHost:8000 username@remoteHost`
+`ssh -L 7000:127.0.0.1:27017 username@remoteHost`
