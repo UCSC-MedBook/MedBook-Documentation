@@ -1,0 +1,87 @@
+Question: how do I add users to cbio
+they can add themselves. The google doc gets magically updated when they request access to WCDT and an email is sent me(not sure how to change this).
+
+first connect to mysql on production
+$ mysql cbioportal -u madmin -p <check portal.properties file for password>
+
+Then you have to insert 2 records into the mysql database
+
+Here are the docs.
+https://github.com/cBioPortal/cbioportal/wiki/User-Authorization
+
+I see Adrian Bivol still has access. He is now at Affy and should be dropped.
+
+mysql> select * from users;
++---------------------------+----------------------+---------+
+| EMAIL                     | NAME                 | ENABLED |
++---------------------------+----------------------+---------+
+| robert.baertsch@gmail.com | Robert Baertsch      |       1 |
+| baertsch@soe.ucsc.edu     | Robert Baertsch      |       1 |
+| ted@soe.ucsc.edu          | Ted Goldstein        |       1 |
+| jstuart@ucsc.edu          | Josh Stuart          |       1 |
+| chrisw@soe.ucsc.edu       | Chris Wong           |       1 |
+| jfyphd@gmail.com          | Jack Youngren        |       1 |
+| bsmithnd@gmail.com        | Bryan Smith          |       1 |
+| wkimmd@gmail.com          | Won Kim              |       1 |
+| PamelaLParis@gmail.com    | Pamela Paris         |       1 |
+| jhnwphillips@gmail.com    | John Williams        |       1 |
+| aggie.rahul@gmail.com     | Rahul Aggarwal       |       1 |
+| charles.ryan41@gmail.com  | Charles Ryan         |       1 |
+| adam.foye@gmail.com       | Adam Foye            |       1 |
+| adam.p.siegel@gmail.com   | Adam Siegel          |       1 |
+| yulia.newton@gmail.com    | Yulia Newton         |       1 |
+| Robertreitermd@gmail.com  | Robert Reiter        |       1 |
+| ericjaysmall@gmail.com    | Eric Small           |       1 |
+| abivol@soe.ucsc.edu       | Adrian Bivol         |       1 |
+| vpcdreamteam@gmail.com    | Vancover Dream Team  |       1 |
+| dgfujimori@gmail.com      | Danica Fujimori      |       1 |
+| lawfong@gmail.com         | Larry Fong           |       1 |
+| uzunangelov@soe.ucsc.edu  | Vlado Uzunangelov    |       1 |
+| evelynkono@gmail.com      | Evelyn Kono          |       1 |
+| linshu8518@gmail.com      | Sophie Lin           |       1 |
+| friedlandertw@gmail.com   | Terence Friedlander
+ |       1 |
+ | nkobayashi9@gmail.com     | Naoko Kobayashi      |       1 |
+ +---------------------------+----------------------+---------+
+ 26 rows in set (0.03 sec)
+
+    mysql>  select * from authorities;
+    +---------------------------+-----------------+
+    | EMAIL                     | AUTHORITY       |
+    +---------------------------+-----------------+
+    | baertsch@soe.ucsc.edu     | gdac-portal:ALL |
+    | robert.baertsch@gmail.com | gdac-portal:ALL |
+    | ted@soe.ucsc.edu          | gdac-portal:ALL |
+    | jstuart@ucsc.edu          | gdac-portal:ALL |
+    | chrisw@soe.ucsc.edu       | gdac-portal:ALL |
+    | jfyphd@gmail.com          | gdac-portal:ALL |
+    | bsmithnd@gmail.com        | gdac-portal:ALL |
+    | wkimmd@gmail.com          | gdac-portal:ALL |
+    | PamelaLParis@gmail.com    | gdac-portal:ALL |
+    | jhnwphillips@gmail.com    | gdac-portal:ALL |
+    | aggie.rahul@gmail.com     | gdac-portal:ALL |
+    | charles.ryan41@gmail.com  | gdac-portal:ALL |
+    | adam.foye@gmail.com       | gdac-portal:ALL |
+    | adam.p.siegel@gmail.com   | gdac-portal:ALL |
+    | yulia.newton@gmail.com    | gdac-portal:ALL |
+    | Robertreitermd@gmail.com  | gdac-portal:ALL |
+    | ericjaysmall@gmail.com    | gdac-portal:ALL |
+    | abivol@soe.ucsc.edu       | gdac-portal:ALL |
+    | vpcdreamteam@gmail.com    | gdac-portal:ALL |
+    | dgfujimori@gmail.com      | gdac-portal:ALL |
+    | lawfong@gmail.com         | gdac-portal:ALL |
+    | uzunangelov@soe.ucsc.edu  | gdac-portal:ALL |
+    | evelynkono@gmail.com      | gdac-portal:ALL |
+    | linshu8518@gmail.com      | gdac-portal:ALL |
+    | friedlandertw@gmail.com   | gdac-portal:ALL |
+    | nkobayashi9@gmail.com     | gdac-portal:ALL |
+    +---------------------------+-----------------+
+    26 rows in set (0.02 sec)
+
+    mysql>
+
+
+All the keys are stored in portal.propertiles.
+
+checkout users.spreadsheet and google.id and googleplus.consumer.key
+
