@@ -5,6 +5,10 @@
 ##### Run app in production mode
 `docker-compose up`
 
+##### Run some apps in development mode
+
+`docker-compose -f docker-compose.yml -f docker-compose-dev.yml`
+
 ## Docker
 
 ##### List all running containers
