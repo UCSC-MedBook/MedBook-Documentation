@@ -43,7 +43,7 @@
 
 ## Mongo
 
-##### Interactive shell 
+##### Interactive shell
 `docker run --net=medbook_default -it mongo:2.6.11 mongo --host mongo`
 
 ##### Restore exported collections (requires export files and load_from_exports.sh present in /tmp/su2c-dev)
@@ -54,3 +54,11 @@
 ##### SSH Tunnel (localhost:7000 forwarded to remoteHost:27017)
 
 `ssh -L 7000:127.0.0.1:27017 username@remoteHost`
+
+##### Mount remote on local filesystem
+
+[Instructions from here](https://www.digitalocean.com/community/tutorials/how-to-use-sshfs-to-mount-remote-file-systems-over-ssh)
+
+[Install FUSE and SSHFS from the osxfuse site.](http://osxfuse.github.io/)
+
+`sshfs -o allow_other,defer_permissions host@remote:/path/on/remote /path/on/local`
