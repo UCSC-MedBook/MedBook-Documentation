@@ -62,3 +62,19 @@
 [Install FUSE and SSHFS from the osxfuse site.](http://osxfuse.github.io/)
 
 `sshfs -o allow_other,defer_permissions host@remote:/path/on/remote /path/on/local`
+
+## tmux
+
+| Command                      | Description |
+| -----------------------------|-------------|
+| `tmux`                       | Start new |
+| `tmux new -s [name]`         | Start new session with name |
+| `tmux a [-t name]`           | Attach to a session |
+| `tmux ls`                    | List sessions |
+| `C-b d`                      | Detach from session |
+| `C-b %`                      | Split pane vertically |
+| `C-b "`                      | Split pane horizontally |
+| `C-b x`                      | Kill pane |
+| `C-b [`                      | Freeze pane, start scrolling |
+
+[More shortcuts](https://gist.github.com/MohamedAlaa/2961058)
