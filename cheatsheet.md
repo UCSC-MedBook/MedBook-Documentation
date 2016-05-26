@@ -51,9 +51,11 @@
 
 ## Misc
 
-##### SSH Tunnel (localhost:7000 forwarded to remoteHost:27017)
+##### SSH Tunnel for MedBook dev boxes
 
 `ssh -L 8000:127.0.0.1:8000 username@remoteHost`
+
+(In general: *xxxx*:127.0.0.1:*yyyy* forwards localhost *xxxx* to remoteHost *yyyy* )
 
 ##### Mount remote on local filesystem
 
