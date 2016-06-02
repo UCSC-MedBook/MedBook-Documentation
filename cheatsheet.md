@@ -41,6 +41,11 @@
 ##### Remove orphaned docker volumes (frees up significant space)
 `docker volume ls -qf dangling=true | xargs -r docker volume rm`
 
+#### Parse docker-compose files to confirm correct indentation etc.
+Prints the resulting yaml if parseable; otherwise, throws error.
+
+`docker-compose -f docker-compose.yml -f docker-compose-dev.yml config`
+
 ## Mongo
 
 ##### Interactive shell
