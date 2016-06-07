@@ -1,4 +1,10 @@
 # Cheat Sheet
+  - [General](#general)
+  - [Docker](#docker)
+  - [Mongo](#mongo)
+  - [Misc](#misc)
+  - [tmux](#tmux)
+  - [Git](#git)
 
 ## General
 
@@ -90,3 +96,8 @@ For example, if you've `docker stop`ped it. Doesn't start dependency containers 
 | `C-b [`                      | Freeze pane, start scrolling |
 
 [More shortcuts](https://gist.github.com/MohamedAlaa/2961058)
+
+## Git
+##### Populate all submodule directories
+`git submodule update --init --recursive
+`
