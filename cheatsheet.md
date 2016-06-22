@@ -57,6 +57,10 @@ For example, if you've `docker stop`ped it. Doesn't start dependency containers 
 
 `docker-compose -f docker-compose.yml -f docker-compose-dev.yml run --no-deps --service-ports `*`patient-care`*
 
+##### Restart docker
+
+`sudo /etc/init.d/docker restart`
+
 ## Mongo
 
 ##### Interactive shell
