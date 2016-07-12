@@ -69,8 +69,13 @@ For example, if you've `docker stop`ped it. Doesn't start dependency containers 
 ##### Restore exported collections (requires export files and load_from_exports.sh present in /tmp/su2c-dev)
 `docker run -v /home/ubuntu/dumps/:/hi --net=medbook_default -it mongo:2.6.11 mongorestore --host mongo /hi`
 
+### Mongo shell commands
 ##### Pretty print
 `db.CollectionName.find({criteria}).pretty()`
+##### List collections or databases
+`show collections`
+
+`show dbs`
 
 ## Misc
 
