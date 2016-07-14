@@ -111,7 +111,6 @@ For example, if you've `docker stop`ped it. Doesn't start dependency containers 
 
 ## Git
 ##### Populate all submodule directories
-`git submodule update --init --recursive
-#### new feature branch
-`git checkout -b f-gsea-new
-`
+`git submodule update --init --recursive`
+##### new feature branch
+`git checkout -b f-gsea-new`
