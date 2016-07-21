@@ -5,6 +5,7 @@
   - [Misc](#misc)
   - [tmux](#tmux)
   - [Git](#git)
+  - [Mysql](#mysql)
 
 ## General
 
@@ -114,3 +115,8 @@ For example, if you've `docker stop`ped it. Doesn't start dependency containers 
 `git submodule update --init --recursive`
 ##### new feature branch
 `git checkout -b f-gsea-new`
+
+## mysql
+import a sql dump into mysql database on local machine
+
+`mysql -h hostname -u <user> -p<Password> cbioportal < dump.sql`  (note: there is no space before the password)
