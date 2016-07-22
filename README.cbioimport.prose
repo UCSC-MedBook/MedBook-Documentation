@@ -1,3 +1,6 @@
+# cbio documentation
+https://github.com/cBioPortal/cbioportal/tree/master/docs
+
 #loading data WCDT data into cbio
 
 The process of loading data into cbio involves four types of data: 1) genomic matrices for expression, copy number, mutation, paradigm IPLs, methylation, Fusion, RPPA; 2) clinical data (which could include signature scores) and 3) metadata describing with data types have data for which samples. This final data is stored in caselist files; 4) timeline data
