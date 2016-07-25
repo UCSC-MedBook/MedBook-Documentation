@@ -25,5 +25,10 @@ The following steps should be taken when fixing a bug, committing, and pushing t
 1. Connect to the production server.
 - Connect to the prod tmux session: `tmux a -t prod`
 - Locate the parent MedBook repository: `cd ~/MedBook`
-- Run `./prepare_for_deploy.sh`. This will pull all non-cached images from Docker Hub
+- Update all code:
+  - `git fetch`
+  - `git status` to confirm everything looks reasonable
+  - `git pull` to actually update
+  - `init.sh` to update the submodules.
+- Run `./scripts/prepare_for_deploy.sh`. This will pull all non-cached images from Docker Hub
 - Press Ctrl-C to stop the site.  Once all containers are spun down, `docker-compose up` to start it again. This system will cause a short downtime.
