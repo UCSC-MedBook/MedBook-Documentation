@@ -1,0 +1,44 @@
+## .screenrc 
+# ctrl-a will no longer give you access to controls; it changes that to ctrl-\.
+
+
+# backspace throws an error, so fix it
+bindkey -d ^? stuff ^H
+bindkey -d ^@ stuff ^H
+
+
+# to be able to attach to the same screen session
+# from different computers without logging out:
+multiuser on
+
+# change the command character
+# use 'C-\' instead of default 'C-a' for better ergonomics 
+# (type 'C-\a' to get effect of normal 'C-\')
+escape ^\a
+
+# don't display the copyright page
+startup_message off
+
+# to allow user to read startup message
+sleep 1
+
+#improve status line
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][help: <ESC> to copy/scroll][%=%{=kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%=%{g}][%{B}%Y-%m-%d %{W}%c %{g}]'
+
+#### test 4/21/14:
+autodetach on # Autodetach session on hangup instead of terminating screen completely
+# from http://www.mattcutts.com/blog/screen-power-tips-screenrc/
+# i'm not clear on what it does
+
+
+#### test 4/8/14:
+shelltitle "$ |bash" # make screen assign window titles automatically
+
+### enable mouse scrollback
+defscrollback 5000
+termcapinfo xterm* ti@:te@
+
+
+# start
+screen -RR 
