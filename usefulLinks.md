@@ -11,6 +11,7 @@ So to use it, set it your shell like this: `export METEOR_OFFLINE_CATALOG=1` bef
 
 ### Bioinformatics
 * [GDC data model](https://gdc.nci.nih.gov/developers/gdc-data-model/gdc-data-model-components)
+* [example patient view in cbioportal](http://www.cbioportal.org/case.do?cancer_study_id=lgg_ucsf_2014&case_id=P04)
 
 ### General Programming
 * [programmer interrupted](http://blog.ninlabs.com/2013/01/programmer-interrupted/) effect of disruptions while coding
