@@ -17,5 +17,6 @@ So to use it, set it your shell like this: `export METEOR_OFFLINE_CATALOG=1` bef
 
 ### General Programming
 * [programmer interrupted](http://blog.ninlabs.com/2013/01/programmer-interrupted/) effect of disruptions while coding
+* [On being a senior engineer](http://www.kitchensoap.com/2012/10/25/on-being-a-senior-engineer/) critical non-coding skills
 
 
