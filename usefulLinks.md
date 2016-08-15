@@ -7,7 +7,8 @@ or any other documents that folks find and want to keep for future reference.
 ### Meteor Guides
 * [promise anti-patterns](http://taoofcode.net/promise-anti-patterns/)
 * The METEOR_OFFLINE_CATALOG prevents meteor from checking the package server. This is very useful when you are on the airplane.
-So to use it, set it your shell like this: `export METEOR_OFFLINE_CATALOG=1` before you start your meteor app.
+So to use it, set it your shell like this: `export METEOR_OFFLINE_CATALOG=1` before you start your meteor app.\
+* [frequently used mongoDB field names should be short](http://objectrocket.com/blog/how-to/short-field-names-mongodb)
 
 ### Bioinformatics
 * [GDC data model](https://gdc.nci.nih.gov/developers/gdc-data-model/gdc-data-model-components)
