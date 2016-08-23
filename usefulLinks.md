@@ -11,6 +11,11 @@ So to use it, set it your shell like this: `export METEOR_OFFLINE_CATALOG=1` bef
 * [frequently used mongoDB field names should be short](http://objectrocket.com/blog/how-to/short-field-names-mongodb)
 * [what relational DB folks think about web stores](http://www.mongodb-is-web-scale.com/)
 
+### Jupyter / IPython
+* [Example Zika analysis notebook](http://nbviewer.jupyter.org/github/maayanlab/Zika-RNAseq-Pipeline/blob/master/Zika.ipynb)
+* [Rob's MedBook notebook](https://github.com/rcurrie/treehouse/blob/master/Outlier.ipynb)
+
+
 ### Bioinformatics
 * [GDC data model](https://gdc.nci.nih.gov/developers/gdc-data-model/gdc-data-model-components)
 * [example patient view in cbioportal](http://www.cbioportal.org/case.do?cancer_study_id=lgg_ucsf_2014&case_id=P04)
