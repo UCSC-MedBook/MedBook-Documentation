@@ -87,7 +87,10 @@ For example, if you've `docker stop`ped it. Doesn't start dependency containers 
 
 `ssh -L 8000:127.0.0.1:8000 username@remoteHost`
 
-(In general: *xxxx*:127.0.0.1:*yyyy* forwards localhost *xxxx* to remoteHost *yyyy* )
+(In general: *xxxx*:127.0.0.1:*yyyy* forwards localhost port *xxxx* to remoteHost port *yyyy* ).
+###### SSH tunnel for single app when not using Gateway:
+`docker inspect `*`foo`*` | grep IPAddress` and use that address instead of 127.0.0.1 above; port is typically 3000.
+
 
 ##### Mount remote on local filesystem
 
