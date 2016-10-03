@@ -14,11 +14,11 @@ So to use it, set it your shell like this: `export METEOR_OFFLINE_CATALOG=1` bef
 ### Jupyter / IPython
 * [Example Zika analysis notebook](http://nbviewer.jupyter.org/github/maayanlab/Zika-RNAseq-Pipeline/blob/master/Zika.ipynb)
 * [Rob's MedBook notebook](https://github.com/rcurrie/treehouse/blob/master/Outlier.ipynb)
-* [Airflow for a DAG workflow](https://danidelvalle.me/2016/09/12/im-sorry-cron-ive-met-airbnbs-airflow/)
 
 ### Bioinformatics
 * [GDC data model](https://gdc.nci.nih.gov/developers/gdc-data-model/gdc-data-model-components)
 * [example patient view in cbioportal](http://www.cbioportal.org/case.do?cancer_study_id=lgg_ucsf_2014&case_id=P04)
+* [Airflow for a DAG workflow](https://danidelvalle.me/2016/09/12/im-sorry-cron-ive-met-airbnbs-airflow/)
 
 ### General Programming
 * [programmer interrupted](http://blog.ninlabs.com/2013/01/programmer-interrupted/) effect of disruptions while coding
