@@ -14,7 +14,7 @@ So to use it, set it your shell like this: `export METEOR_OFFLINE_CATALOG=1` bef
 ### Jupyter / IPython
 * [Example Zika analysis notebook](http://nbviewer.jupyter.org/github/maayanlab/Zika-RNAseq-Pipeline/blob/master/Zika.ipynb)
 * [Rob's MedBook notebook](https://github.com/rcurrie/treehouse/blob/master/Outlier.ipynb)
-
+* [Airflow for a DAG workflow](https://danidelvalle.me/2016/09/12/im-sorry-cron-ive-met-airbnbs-airflow/)
 
 ### Bioinformatics
 * [GDC data model](https://gdc.nci.nih.gov/developers/gdc-data-model/gdc-data-model-components)
