@@ -121,6 +121,8 @@ For example, if you've `docker stop`ped it. Doesn't start dependency containers 
 `git submodule update --init --recursive`
 ##### new feature branch
 `git checkout -b f-gsea-new`
+##### Network-style commit log
+`git log --graph --oneline --all`
 
 ## mysql
 import a sql dump into mysql database on local machine
