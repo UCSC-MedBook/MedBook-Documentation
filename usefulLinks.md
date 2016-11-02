@@ -21,6 +21,9 @@ So to use it, set it your shell like this: `export METEOR_OFFLINE_CATALOG=1` bef
 * [* GA4GH Examples accessing variants, expression etc... (under notebooks):](https://github.com/BD2KGenomics/bioapi-examples) 
 * [* Munging 1TB of data using Spark in Jupyter](http://blog.insightdatalabs.com/jupyter-on-apache-spark-step-by-step/) 
 
+### Flask
+* [a broad run down of some of the elements of the restful tooling](http://michal.karzynski.pl/blog/2016/06/19/building-beautiful-restful-apis-using-flask-swagger-ui-flask-restplus/)
+
 ### Bioinformatics
 * [GDC data model](https://gdc.nci.nih.gov/developers/gdc-data-model/gdc-data-model-components)
 * [example patient view in cbioportal](http://www.cbioportal.org/case.do?cancer_study_id=lgg_ucsf_2014&case_id=P04)
