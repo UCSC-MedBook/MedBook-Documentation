@@ -124,6 +124,8 @@ For example, if you've `docker stop`ped it. Doesn't start dependency containers 
 ##### Network-style commit log
 `git log --graph --oneline --all`
 
+[GitFlow branching model documentation](https://datasift.github.io/gitflow/GitFlowForGitHub.html)
+
 ## mysql
 import a sql dump into mysql database on local machine
 
