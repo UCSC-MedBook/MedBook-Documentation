@@ -6,7 +6,7 @@
   - [tmux](#tmux)
   - [Git](#git)
   - [Mysql](#mysql)
-  - [TravisCI](#TravisCI)
+  - [TravisCI](#travisci)
 
 ## General
 
@@ -135,4 +135,4 @@ import a sql dump into mysql database on local machine
 `docker run -v /mnt/mysql-dump/:/hi mysql:5.7 bash -c "mysql -u root -pasdfasdf cbioportal < /hi/dump.sql"`
 
 ## TravisCI
-If you don’t want to run a build for a particular commit any reason add [ci skip] or [skip ci] to the git commit message. [via](https://docs.travis-ci.com/user/customizing-the-build/#Skipping-a-build)
+If you don’t want to run a build for a particular commit any reason add `[ci skip]` or `[skip ci]` to the git commit message. [via](https://docs.travis-ci.com/user/customizing-the-build/#Skipping-a-build)
