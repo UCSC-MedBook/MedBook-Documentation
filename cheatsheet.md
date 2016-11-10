@@ -135,4 +135,8 @@ import a sql dump into mysql database on local machine
 `docker run -v /mnt/mysql-dump/:/hi mysql:5.7 bash -c "mysql -u root -pasdfasdf cbioportal < /hi/dump.sql"`
 
 ## TravisCI
+For documentation or ansible changes that shouldn't trigger a travis build:
+
 If you don’t want to run a build for a particular commit any reason add `[ci skip]` or `[skip ci]` to the git commit message. [via](https://docs.travis-ci.com/user/customizing-the-build/#Skipping-a-build)
+
+For pull requests, [skip ci] must be added to ALL commits in the pull request (as opposed to the pull request message itself) to prevent travis from running CI.
