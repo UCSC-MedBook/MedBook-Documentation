@@ -82,6 +82,9 @@ For example, if you've `docker stop`ped it. Doesn't start dependency containers 
 
 `show dbs`
 
+##### Sort by a field
+`db.CollectionName.find().sort({fieldname: 1})` or -1 for reverse sort
+
 ## Misc
 
 ##### SSH Tunnel for MedBook dev boxes
