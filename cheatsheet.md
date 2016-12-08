@@ -46,6 +46,9 @@
 ##### Follow logs of single container
 `docker logs --follow [CONTAINER_NAME]`
 
+##### Follow logs of all the containers
+`docker-compose logs --follow --tail 10`
+
 ##### Remove orphaned docker volumes (frees up significant space)
 `docker volume ls -qf dangling=true | xargs -r docker volume rm`
 
