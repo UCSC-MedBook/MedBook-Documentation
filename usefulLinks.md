@@ -23,6 +23,8 @@ So to use it, set it your shell like this: `export METEOR_OFFLINE_CATALOG=1` bef
 
 ### Flask
 * [a broad run down of some of the elements of the restful tooling](http://michal.karzynski.pl/blog/2016/06/19/building-beautiful-restful-apis-using-flask-swagger-ui-flask-restplus/)
+* [Swagger syntactic sugar](https://github.com/ga4gh/cgtd/blob/master/cgtd/cgtd.py#L120)
+* [automatic api documentation with swagger!](http://ucsf.edu.cancergenetrust.org/api)
 
 ### Bioinformatics
 * [GDC data model](https://gdc.nci.nih.gov/developers/gdc-data-model/gdc-data-model-components)
