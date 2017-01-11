@@ -39,6 +39,7 @@ collaborative creation of reproducible computational narratives"
 * [Airflow for a DAG workflow](https://danidelvalle.me/2016/09/12/im-sorry-cron-ive-met-airbnbs-airflow/)
 * [RNA-Seq in Mice w/Limma](https://f1000research.com/articles/5-1408/v2#ref-24) Also of interest due to presentation - embedded R code - uses Knitr.
 * [R's GA4GH Library + API example](https://github.com/labbcb/GA4GHclient/issues/23#issuecomment-271931574)
+* [Python GA4GH Library examples](https://github.com/BD2KGenomics/bioapi-examples/tree/master/python_notebooks)
 
 ### General Programming
 * [programmer interrupted](http://blog.ninlabs.com/2013/01/programmer-interrupted/) effect of disruptions while coding
