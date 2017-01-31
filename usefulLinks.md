@@ -33,7 +33,7 @@ collaborative creation of reproducible computational narratives"
 * [Oncotree](http://oncotree.mskcc.org/oncotree/) A tree visualization of cancer types. Some nice json under the hood.
 * [Fighting Cancer Through Curiosity](http://stevenkeating.info/main.html) ([Youtube](https://www.youtube.com/watch?v=U5SafKJgqPM)) - TED talk on data sharing by a cancer patient
 * [Forbes: Dana Farber study on precision medicine + brain cancer ](http://www.forbes.com/sites/arleneweintraub/2017/01/19/how-precision-medicine-could-be-a-lifesaver-for-kids-with-brain-cancer)
-
+* [the NMTRC’s genomic-based treatment for childhood cancer](https://beatnb.org/blog/2015/12/18/how-were-beating-kids-cancer-with-computers/)
 ### Bioinformatics
 * [GDC data model](https://gdc.nci.nih.gov/developers/gdc-data-model/gdc-data-model-components)
 * [example patient view in cbioportal](http://www.cbioportal.org/case.do?cancer_study_id=lgg_ucsf_2014&case_id=P04)
