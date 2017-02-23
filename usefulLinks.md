@@ -23,6 +23,9 @@ collaborative creation of reproducible computational narratives"
 * [* GA4GH Examples accessing variants, expression etc... (under notebooks):](https://github.com/BD2KGenomics/bioapi-examples) 
 * [* Munging 1TB of data using Spark in Jupyter](http://blog.insightdatalabs.com/jupyter-on-apache-spark-step-by-step/) 
 * [The good and bad of HDF5](http://cyrille.rossant.net/moving-away-hdf5/)
+* [The State of Jupyter - O'Reilly](https://www.oreilly.com/ideas/the-state-of-jupyter)
+* [Google Cloud Platform - Jupyter + SQL](https://cloud.google.com/datalab/)
+
 
 ### Flask
 * [a broad run down of some of the elements of the restful tooling](http://michal.karzynski.pl/blog/2016/06/19/building-beautiful-restful-apis-using-flask-swagger-ui-flask-restplus/)
@@ -34,6 +37,7 @@ collaborative creation of reproducible computational narratives"
 * [Fighting Cancer Through Curiosity](http://stevenkeating.info/main.html) ([Youtube](https://www.youtube.com/watch?v=U5SafKJgqPM)) - TED talk on data sharing by a cancer patient
 * [Forbes: Dana Farber study on precision medicine + brain cancer ](http://www.forbes.com/sites/arleneweintraub/2017/01/19/how-precision-medicine-could-be-a-lifesaver-for-kids-with-brain-cancer)
 * [the NMTRC’s genomic-based treatment for childhood cancer](https://beatnb.org/blog/2015/12/18/how-were-beating-kids-cancer-with-computers/)
+* [SU2C's Phil Sharp + St. Baldrick’s Pediatric Dream Team's Dr. Crystal Mackall wrap up the Summit (Jan 2017)](https://www.facebook.com/su2c/videos/10153996991430876/)
 
 ### Bioinformatics
 * [GDC data model](https://gdc.nci.nih.gov/developers/gdc-data-model/gdc-data-model-components)
