@@ -38,6 +38,8 @@ collaborative creation of reproducible computational narratives"
 * [Forbes: Dana Farber study on precision medicine + brain cancer ](http://www.forbes.com/sites/arleneweintraub/2017/01/19/how-precision-medicine-could-be-a-lifesaver-for-kids-with-brain-cancer)
 * [the NMTRC’s genomic-based treatment for childhood cancer](https://beatnb.org/blog/2015/12/18/how-were-beating-kids-cancer-with-computers/)
 * [SU2C's Phil Sharp + St. Baldrick’s Pediatric Dream Team's Dr. Crystal Mackall wrap up the Summit (Jan 2017)](https://www.facebook.com/su2c/videos/10153996991430876/)
+* [Cognoma](https://github.com/cognoma/cognoma) - machine learning cancer webapp with sample/genes api. [API](https://github.com/cognoma/core-service/blob/master/doc/api.md)
+* [OMOP clinical data schema](http://harvest.research.chop.edu/demos/) - used by PMI and CHOP. [postgres webapp](https://github.com/OHDSI/Atlas)
 
 ### Bioinformatics
 * [GDC data model](https://gdc.nci.nih.gov/developers/gdc-data-model/gdc-data-model-components)
