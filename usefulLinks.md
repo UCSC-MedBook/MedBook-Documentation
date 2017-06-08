@@ -25,6 +25,9 @@ collaborative creation of reproducible computational narratives"
 * [The good and bad of HDF5](http://cyrille.rossant.net/moving-away-hdf5/)
 * [The State of Jupyter - O'Reilly](https://www.oreilly.com/ideas/the-state-of-jupyter)
 * [Google Cloud Platform - Jupyter + SQL](https://cloud.google.com/datalab/)
+* [Maarten Breddels | A billion stars in the Jupyter Notebook](https://youtu.be/bP-JBbjwLM8) [video] Check out the interactive widgets mid way through to end
+* [Reproducible Data Analysis in Jupyter](http://jakevdp.github.io/blog/2017/03/03/reproducible-data-analysis-in-jupyter/) [video] Guide for jupyter-> python package + unit tests
+* [interactive tables in jupyter notebook](http://nbviewer.jupyter.org/gist/TimShawver/8fcef51dd3c222ed25306c002ab89b60) Pulls data frame into a javascript variable
 
 
 ### Flask
@@ -48,9 +51,14 @@ collaborative creation of reproducible computational narratives"
 * [RNA-Seq in Mice w/Limma](https://f1000research.com/articles/5-1408/v2#ref-24) Also of interest due to presentation - embedded R code - uses Knitr.
 * [R's GA4GH Library + API example](https://github.com/labbcb/GA4GHclient/issues/23#issuecomment-271931574)
 * [Python GA4GH Library examples](https://github.com/BD2KGenomics/bioapi-examples/tree/master/python_notebooks)
+* [Standards and guidelines for the interpretation of sequence variants](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4544753/)
+
+
+### Machine Learning
+* [Distill - machine learning interactive viz journal](http://distill.pub/about/)
 
 ### General Programming
 * [programmer interrupted](http://blog.ninlabs.com/2013/01/programmer-interrupted/) effect of disruptions while coding
 * [On being a senior engineer](http://www.kitchensoap.com/2012/10/25/on-being-a-senior-engineer/) critical non-coding skills
-
+* [Headless Mode coming to Chrome](https://www.chromestatus.com/features/5678767817097216)
 
