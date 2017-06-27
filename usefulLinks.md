@@ -28,7 +28,7 @@ collaborative creation of reproducible computational narratives"
 * [Maarten Breddels | A billion stars in the Jupyter Notebook](https://youtu.be/bP-JBbjwLM8) [video] Check out the interactive widgets mid way through to end
 * [Reproducible Data Analysis in Jupyter](http://jakevdp.github.io/blog/2017/03/03/reproducible-data-analysis-in-jupyter/) [video] Guide for jupyter-> python package + unit tests
 * [interactive tables in jupyter notebook](http://nbviewer.jupyter.org/gist/TimShawver/8fcef51dd3c222ed25306c002ab89b60) Pulls data frame into a javascript variable
-
+* [Extension that provides search as well as turning notebooks into modules](https://github.com/jupyter-incubator/contentmanagement) see also the [Whoosh full-text search](https://pypi.python.org/pypi/Whoosh/)
 
 ### Flask
 * [a broad run down of some of the elements of the restful tooling](http://michal.karzynski.pl/blog/2016/06/19/building-beautiful-restful-apis-using-flask-swagger-ui-flask-restplus/)
