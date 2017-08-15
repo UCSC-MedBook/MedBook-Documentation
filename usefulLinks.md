@@ -11,6 +11,9 @@ So to use it, set it your shell like this: `export METEOR_OFFLINE_CATALOG=1` bef
 * [frequently used mongoDB field names should be short](http://objectrocket.com/blog/how-to/short-field-names-mongodb)
 * [what relational DB folks think about web stores](http://www.mongodb-is-web-scale.com/)
 
+### Git 
+* [OneFlow](http://endoflineblog.com/oneflow-a-git-branching-model-and-workflow) an evolution of GitFlow to consider using
+
 ### Jupyter / IPython
 * [Why Jupyter? Its grant application](https://blog.jupyter.org/2015/07/07/project-jupyter-computational-narratives-as-the-engine-of-collaborative-data-science/) - " the core problem we are trying to solve is the 
 collaborative creation of reproducible computational narratives"
@@ -52,6 +55,7 @@ collaborative creation of reproducible computational narratives"
 * [R's GA4GH Library + API example](https://github.com/labbcb/GA4GHclient/issues/23#issuecomment-271931574)
 * [Python GA4GH Library examples](https://github.com/BD2KGenomics/bioapi-examples/tree/master/python_notebooks)
 * [Standards and guidelines for the interpretation of sequence variants](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4544753/)
+* [Nature - broad-spectrum RNA-seq analysis](https://www.nature.com/articles/s41467-017-00050-4) and associated [pipeline in Docker](https://bioinform.github.io/rnacocktail/)
 
 
 ### Machine Learning
@@ -62,3 +66,6 @@ collaborative creation of reproducible computational narratives"
 * [On being a senior engineer](http://www.kitchensoap.com/2012/10/25/on-being-a-senior-engineer/) critical non-coding skills
 * [Headless Mode coming to Chrome](https://www.chromestatus.com/features/5678767817097216)
 
+### Data Sharing
+* [Nature - Empty rhetoric over data sharing slows science
+](http://www.nature.com/news/empty-rhetoric-over-data-sharing-slows-science-1.22133)
